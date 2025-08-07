@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Clustering Results</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <h1>Clustering Results</h1>
+            <div class="images">
+                <div class="image-block">
+                    <h3>Dendrogram</h3>
+                    <img src="{{ url_for('static', filename='dendrogram.png') }}" alt="Dendrogram">
+                </div>
+                <div class="image-block">
+                    <h3>Clustered Data</h3>
+                    <img src="{{ url_for('static', filename='clusters.png') }}" alt="Clustered Data">
+                </div>
+            </div>
+            <a href="/" class="btn">← Back to Home</a>
+        </div>
+    </div>
+</body>
+</html>
